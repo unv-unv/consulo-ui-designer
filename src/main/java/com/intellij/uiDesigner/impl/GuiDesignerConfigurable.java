@@ -175,7 +175,7 @@ public final class GuiDesignerConfigurable implements ProjectConfigurable, Confi
 
             myLayoutManagerCombo = ComboBox.create(LayoutManagerRegistry.getNonDeprecatedLayoutManagerNames());
             myLayoutManagerCombo.selectFirst();
-            myLayoutManagerCombo.setTextRender(value -> LocalizeValue.of(LayoutManagerRegistry.getLayoutManagerDisplayName(value)));
+            myLayoutManagerCombo.setTextRenderer(value -> LocalizeValue.of(LayoutManagerRegistry.getLayoutManagerDisplayName(value)));
 
             myPanel.add(LabeledBuilder.sided(UIDesignerLocalize.defaultLayoutManager(), myLayoutManagerCombo));
 
